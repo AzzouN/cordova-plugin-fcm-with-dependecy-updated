@@ -77,6 +77,9 @@
 		<source-file src="src/android/com/gae/scaffolder/plugin/FCMPluginActivity.java" target-dir="src/com/gae/scaffolder/plugin" />
 		<source-file src="src/android/com/gae/scaffolder/plugin/interfaces/OnFinishedListener.java" target-dir="src/com/gae/scaffolder/plugin/interfaces" />
 		<source-file src="src/android/com/gae/scaffolder/plugin/interfaces/TokenListeners.java" target-dir="src/com/gae/scaffolder/plugin/interfaces" />
+		<config-file target="AndroidManifest.xml" parent="/*">
+            		<uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+        	</config-file>
 	</platform>
 
 	<!-- IOS CONFIGURATION -->
